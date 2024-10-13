@@ -6,10 +6,7 @@ const bookSchema = new Schema(
         type:String,
         require : true
     },
-    author:{
-        type:String,
-        require : true
-    },
+   author: { type: Schema.Types.ObjectId, ref: 'User' },
     num_of_cop:{
         type:Number,
         require : true
